@@ -31,7 +31,6 @@ async function run() {
 
 
         app.get('/products', async(req, res) =>{
-            console.log(req.query);
             const page = parseInt(req.query.page) || 0;
             const limit = parseInt(req.query.limit) || 10;
             const skip = page * limit;
@@ -49,7 +48,6 @@ async function run() {
 
         app.post('/productsById', async(req, res) =>{
             const ids = req.body;
-            console.log(ids);
 
             const objectIds = ids.map(id => new ObjectId(id));
             const query = {_id: {$in: objectIds}}
