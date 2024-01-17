@@ -4,6 +4,7 @@ this project is create with npm node.js and express.js for Ema-john project whic
 
 
 ## Local installation
+clone the code from GitHub and then command this on your terminal
 ```
 npm install
 ```
@@ -11,4 +12,4 @@ npm install
 npm start
 ```
 
-### Live server [link](https://ema-john-server-green.vercel.app/)
+### Live server link: https://ema-john-server-green.vercel.app/
